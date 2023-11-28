@@ -36,7 +36,7 @@ html{
     gap: 25px;
 }
 
-main div.general-container{
+.general-container{
     width: 85%;
     margin: 0 auto;
 }
@@ -70,6 +70,9 @@ header nav > ul{
 }
 header nav > ul li{
     list-style-type: none;
+}
+header nav > ul:last-of-type li:first-of-type a i{
+    color: black;
 }
 header nav > ul li a{
     list-style-type: none;
@@ -127,7 +130,7 @@ main #cta .big-container video{
 }
 
 /* feature section */
-section > h2{
+section > h2:not(section#try h2){
     text-align: center;
     padding-block: 2.5em;
 }
@@ -206,7 +209,7 @@ main #features .feature-box .box h4{
 #cites{
     background-color:#232121;
     padding:4em 1em 5em 4em;
-    margin-block: 100px;
+    margin-top: 90px;
 }
 #cites .cites-container{
     width: 90%;
@@ -273,4 +276,73 @@ main #features .feature-box .box h4{
 }
 #cites .cite-number span i{
     margin-left: 10px;
+}
+/* section try elements */
+#try{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 100px;
+}
+
+#try > h2{
+    font-size: 3rem;
+}
+
+/* footer element */
+footer{
+    background-color: black;
+}
+
+footer div.general-container:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding-block: 70px;
+}
+
+footer div.general-container ul{
+    flex-basis: calc(100% / 5);
+    font-weight: 300;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer div.general-container ul li:first-child{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-block: 1em;
+}
+
+footer div.general-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer div.general-container ul li a:hover{
+    text-decoration: underline;
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+#socials .social-icon{
+    display: flex;
+    gap: 1em;
+    font-size: 1.4em;
+}
+#socials hr{
+    width: 10%;
+    border: 0.1px solid gray;
+}
+#socials .lang{
+    font-size: 1.1rem;
+    padding-bottom: 50px;
+}
+#socials .lang i{
+    margin-left: 5px;
 }
