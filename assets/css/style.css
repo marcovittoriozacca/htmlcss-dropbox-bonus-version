@@ -5,7 +5,10 @@
     box-sizing: border-box;
     /* border: 1px solid black; */
 }
-
+img,
+video{
+    display: block;
+}
 html{
     font-family: sans-serif;
     color: white;
@@ -15,7 +18,7 @@ html{
     background-color: #0161FE;
     color: white;
     padding:10px;
-
+    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -36,6 +39,10 @@ html{
 main div.general-container{
     width: 85%;
     margin: 0 auto;
+}
+
+p{
+    font-size: 1.1rem;
 }
 
 /* navbar elements */
@@ -105,17 +112,21 @@ main #cta .cta-small-container{
     text-align: center;
     gap: 1.5em;
 }
+main #cta .cta-small-container h1{
+    line-height: 130%;
+    font-size: 2.5rem;
+}
 
-main #cta .cta-big-container{
+.big-container{
     width: 93%;
     margin: 0 auto;
 }
-main #cta .cta-big-container video{
+main #cta .big-container video{
     width: 100%;
 }
 
 /* feature section */
-main #features h2{
+h2{
     text-align: center;
     padding-block: 2.5em;
     font-size: 2rem;
@@ -134,3 +145,37 @@ main #features .feature-box .box{
 
     line-height: 160%;
 }
+
+/* how to use it section elements */
+#how-to-use-it div.big-container{
+    display: flex;
+    gap: 1em;
+}
+
+#how-to-use-it div.big-container div.card{
+    width: 50%;
+    background-color:#2B2929;
+}
+
+#how-to-use-it div.big-container div.card figure img{
+    width: 100%;
+}
+#how-to-use-it div.big-container div.card div.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 3em;
+}
+#how-to-use-it div.big-container div.card div.info h3{
+    font-size:1.6rem;
+    font-weight: 300;
+    padding-block: 0.5em;
+}
+#how-to-use-it div.big-container div.card div.info p{
+    line-height: 160%;
+    word-spacing: 1px;
+}
+
+
+
