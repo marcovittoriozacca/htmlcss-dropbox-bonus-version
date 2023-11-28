@@ -1,5 +1,111 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+html{
+    font-family: sans-serif;
+    color: white;
+}
+
+/* navbar elements */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+
+    font-weight: 300;
+}
+
+header nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+header nav > ul li{
+    list-style-type: none;
+}
+header nav > ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* dropbox svg navbar logo */
+.flex-drop-logo{
+    display: flex;
+    align-items: center;
+}
+.drobpox-nav-logo{
+    background-color:#0161FE;
+}
+.flex-drop-logo figure{
+    padding: 9px;
+}
+
+/* main elements */
+main{
+    padding-top: 120px;
+    background-color:#1E1919;
+}
+
+/* cta elements */
+#cta{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    line-height: 180%;
+}
+main #cta .cta-small-container{
+    width: 50%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+}
+
+.blue-btn{
+    background-color: #0161FE;
+    color: white;
+    padding:10px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 5px;
+}
+
+.light-blue-btn{
+    background-color: #3984FF;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+main #cta .cta-big-container{
+    width: 93%;
+    margin: 0 auto;
+}
+main #cta .cta-big-container video{
+    width: 100%;
 }
