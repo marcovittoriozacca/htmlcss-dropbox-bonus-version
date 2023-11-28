@@ -43,6 +43,7 @@ main div.general-container{
 
 p{
     font-size: 1.1rem;
+    line-height: 180%;
 }
 
 /* navbar elements */
@@ -100,7 +101,7 @@ main{
     flex-direction: column;
     gap: 3em;
 
-    line-height: 180%;
+    
 }
 main #cta .cta-small-container{
     width: 50%;
@@ -126,9 +127,11 @@ main #cta .big-container video{
 }
 
 /* feature section */
-h2{
+section > h2{
     text-align: center;
     padding-block: 2.5em;
+}
+h2{
     font-size: 2rem;
 }
 
@@ -144,6 +147,9 @@ main #features .feature-box .box{
     flex-basis: calc(100% / 4);
 
     line-height: 160%;
+}
+main #features .feature-box .box h4{
+    font-size: 1.2rem;
 }
 
 /* how to use it section elements */
@@ -173,9 +179,26 @@ main #features .feature-box .box{
     padding-block: 0.5em;
 }
 #how-to-use-it div.big-container div.card div.info p{
-    line-height: 160%;
     word-spacing: 1px;
 }
+#how-to-use-it div.big-container div.card div.info a{
+    word-spacing: 1px;
+    font-size: 1.2rem;
+}
 
+/* capacity elements */
+#capacity div.general-container{
+    display: flex;
+    gap: 3em;
+}
+#capacity div.general-container div.col-capacity{
+    flex-basis: calc(100% / 3);
+}
 
+#capacity div.general-container div.col-capacity{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
 
