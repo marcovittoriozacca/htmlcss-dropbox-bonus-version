@@ -11,6 +11,33 @@ html{
     color: white;
 }
 
+.blue-btn{
+    background-color: #0161FE;
+    color: white;
+    padding:10px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 5px;
+}
+
+.light-blue-btn{
+    background-color: #3984FF;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+main div.general-container{
+    width: 85%;
+    margin: 0 auto;
+}
+
 /* navbar elements */
 header nav{
     display: flex;
@@ -79,33 +106,31 @@ main #cta .cta-small-container{
     gap: 1.5em;
 }
 
-.blue-btn{
-    background-color: #0161FE;
-    color: white;
-    padding:10px;
-
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-right: 5px;
-}
-
-.light-blue-btn{
-    background-color: #3984FF;
-    color: black;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 20px 30px 20px 30px;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-
 main #cta .cta-big-container{
     width: 93%;
     margin: 0 auto;
 }
 main #cta .cta-big-container video{
     width: 100%;
+}
+
+/* feature section */
+main #features h2{
+    text-align: center;
+    padding-block: 2.5em;
+    font-size: 2rem;
+}
+
+main #features .feature-box{
+    display: flex;
+    gap: 2.8em;
+}
+
+main #features .feature-box .box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    flex-basis: calc(100% / 4);
+
+    line-height: 160%;
 }
