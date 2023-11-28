@@ -202,3 +202,75 @@ main #features .feature-box .box h4{
     gap: 1.5em;
 }
 
+/* cites section */
+#cites{
+    background-color:#232121;
+    padding:4em 1em 5em 4em;
+    margin-block: 100px;
+}
+#cites .cites-container{
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#cites .cites-container figure{
+    flex-basis: 30%;
+}
+#cites .cites-container figure img{
+    width: 100%;
+
+}
+
+#cites .cites-container div.info{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+#cites .cites-container div.info blockquote{
+    font-size:1.5rem;
+}
+#cites .cites-container div.info a{
+    color: white;
+    font-size: 1.1rem;
+    width: fit-content;
+}
+#cites .cites-container div.info a i{
+    margin-left:13px;
+}
+#cites .cites-container div.info cite{
+    font-style:normal;
+}
+#cites .cites-container div.info cite + span{
+    color: gray;
+    font-size: 0.8rem;
+    margin-top: -13px;
+}
+#cites .cites-container div.arrow-icon a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    
+    /* color: #232121; */
+    color: white;
+}
+
+/* #cites .info:hover div.arrow-icon a{
+    color: white;
+} */
+
+#cites .cite-number{
+    color: gray;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 30px;
+}
+#cites .cite-number:hover{
+    cursor: pointer;
+}
+#cites .cite-number span i{
+    margin-left: 10px;
+}
