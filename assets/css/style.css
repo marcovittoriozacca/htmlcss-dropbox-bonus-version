@@ -107,7 +107,7 @@ main{
     
 }
 main #cta .cta-small-container{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 
     display: flex;
@@ -118,9 +118,13 @@ main #cta .cta-small-container{
 }
 main #cta .cta-small-container h1{
     line-height: 130%;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
-
+h1,h2{
+    font-family: 'Sharp Grotesk Book 25';
+    font-weight: normal;
+    font-style: normal;
+}
 .big-container{
     width: 93%;
     margin: 0 auto;
@@ -135,7 +139,7 @@ section > h2:not(section#try h2){
     padding-block: 2.5em;
 }
 h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 main #features .feature-box{
